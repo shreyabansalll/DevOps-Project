@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowBalance | Finance Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   <!-- TOP NAVBAR (GLOBAL) -->
+<nav class="top-nav card">
+  <div class="nav-left">
+    <a href="index.html" class="brand">Flow<span>Balance</span></a>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="finance.html">Finance</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <div id="quoteCompact" class="quote-compact"></div>
+    <button id="profileBtn" class="secondary-btn">Hi, <span id="navUser">You</span></button>
+  </div>
+</nav>
+  <script src="js/api.js"></script>       <!-- quote loader -->
+  <!-- HEADER -->
+  <header class="page-header">
+    <h1>Finance Tracker</h1>
+    <p class="page-subtitle">Add, manage, and analyse your expenses and income</p>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main class="form-container">
+
+    <!-- ADD EXPENSE FORM -->
+    <section class="card form-card">
+      <h2>Add Expense</h2>
+
+      <form id="expenseForm">
+        <label>
+          Expense Name:
+          <input type="text" id="expenseName" placeholder="Eg. Groceries" required />
+        </label>
+
+        <label>
+          Amount (₹):
+          <input type="number" id="expenseAmount" placeholder="Eg. 500" required />
+        </label>
+
+        <label>
+          Category:
+          <select id="expenseCategory">
+            <option value="Food">Food</option>
+            <option value="Bills">Bills</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Travel">Travel</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+          </select>
+        </label>
+
+        <button type="submit" class="primary-btn">Add Expense</button>
+      </form>
+    </section>
+
+
+    <!-- EXPENSE LIST -->
+    <section class="card list-card">
+      <h2>Expense List</h2>
+      <ul id="expenseList" class="list"></ul>
+      <h3 id="totalAmount">Total: ₹0</h3>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 FlowBalance • Finance Module</p>
+  </footer>
+
+  <!-- EXTERNAL LOGIC FILE -->
+  <script src="js/finance.js"></script>
+
+</body>
+</html>

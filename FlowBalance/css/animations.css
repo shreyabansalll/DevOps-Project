@@ -1,0 +1,77 @@
+/* ========================================
+   FlowBalance Animation Styles
+   Smooth • Modern • Aesthetic
+========================================= */
+
+/* Fade-in for cards and sections */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in for list items and dashboard cards */
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Button press animation */
+.primary-btn,
+.secondary-btn,
+.danger-btn {
+  transition: transform 0.15s ease;
+}
+
+.primary-btn:active,
+.secondary-btn:active,
+.danger-btn:active {
+  transform: scale(0.96);
+}
+
+/* Timer glow animation */
+.timer-glow {
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    color: var(--primary);
+  }
+  50% {
+    color: #ff4b4b;
+  }
+  100% {
+    color: var(--primary);
+  }
+}
+
+/* Smooth transition for theme changes */
+body,
+.card,
+input,
+select,
+.list li {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

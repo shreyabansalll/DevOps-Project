@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowBalance | Settings</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- TOP NAVBAR (GLOBAL) -->
+<nav class="top-nav card">
+  <div class="nav-left">
+    <a href="index.html" class="brand">Flow<span>Balance</span></a>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="finance.html">Finance</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <div id="quoteCompact" class="quote-compact"></div>
+    <button id="profileBtn" class="secondary-btn">Hi, <span id="navUser">You</span></button>
+  </div>
+</nav>
+  <!-- HEADER -->
+  <header class="page-header">
+    <h1>Settings</h1>
+    <p class="page-subtitle">Customise your FlowBalance experience</p>
+  </header>
+
+  <!-- MAIN SETTINGS SECTION -->
+  <main class="settings-container">
+
+    <!-- USERNAME SECTION -->
+    <section class="card form-card">
+      <h2>Profile</h2>
+      <label>
+        Your Name:
+        <input type="text" id="usernameInput" placeholder="Enter your name" />
+      </label>
+      <button id="saveNameBtn" class="primary-btn">Save Name</button>
+    </section>
+
+    <!-- THEME TOGGLE SECTION -->
+    <section class="card form-card">
+      <h2>Appearance</h2>
+      <label class="toggle-label">
+        Dark Mode:
+        <input type="checkbox" id="themeToggle" />
+      </label>
+    </section>
+
+    <!-- DATA RESET SECTION -->
+    <section class="card form-card">
+      <h2>Data Control</h2>
+      <button id="clearDataBtn" class="danger-btn">Reset All Data</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 FlowBalance • Settings Module</p>
+  </footer>
+
+  <!-- EXTERNAL SETTINGS JS -->
+  <script src="js/storage.js"></script>
+
+</body>
+</html>

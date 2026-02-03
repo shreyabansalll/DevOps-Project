@@ -1,0 +1,43 @@
+{
+  "expenses": [
+    {
+      "id": 1,
+      "name": "Groceries",
+      "amount": 1200,
+      "category": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Electricity Bill",
+      "amount": 950,
+      "category": "Bills"
+    },
+    {
+      "id": 3,
+      "name": "Cab Ride",
+      "amount": 300,
+      "category": "Travel"
+    }
+  ],
+
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Finish Assignment",
+      "priority": "High",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "name": "Study JavaScript",
+      "priority": "Medium",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "name": "Workout",
+      "priority": "Low",
+      "completed": false
+    }
+  ]
+}
