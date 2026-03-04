@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowBalance | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="top-nav card">
+  <div class="nav-left">
+    <a href="index.html" class="brand">Flow<span>Balance</span></a>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="finance.html">Finance</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <div id="quoteCompact" class="quote-compact"></div>
+    <button id="profileBtn" class="secondary-btn">Hi, <span id="navUser">You</span></button>
+  </div>
+</nav>
+  <script src="js/api.js"></script>       <!-- quote loader -->
+  <!-- HEADER -->
+  <header class="hero">
+    <h1 class="title">Flow<span>Balance</span></h1>
+    <p class="subtitle">Track your tasks • Manage your finances • Stay balanced</p>
+  </header>
+
+  <!-- MAIN SECTION -->
+<main class="landing-container fade-in">
+  <section class="welcome-box card">
+    <h2 id="welcomeText">Welcome to FlowBalance!</h2>
+    <p class="small-info">Your journey to a balanced life starts here.</p>
+
+    <button id="startBtn" class="primary-btn">Go to Dashboard</button>
+  </section>
+</main>
+
+  <footer>
+    <p>© 2025 FlowBalance • Designed for Productivity & Finance</p>
+  </footer>
+
+  <!-- ✔ PRACTICAL: INLINE JAVASCRIPT -->
+  <script>
+    console.log("FlowBalance inline JS loaded.");
+    console.log("Browser Info:", navigator.userAgent);
+
+    console.table([
+      { Practical: "Inline JS", Status: "Used" },
+      { Practical: "Console Methods", Methods: "log, table, trace" }
+    ]);
+
+    console.trace("Inline JS Trace Log");
+  </script>
+
+  <!-- ✔ PRACTICAL: INTERNAL JAVASCRIPT -->
+  <script>
+    const welcomeEl = document.getElementById("welcomeText");
+
+    const savedName = localStorage.getItem("fb_username");
+
+    if (savedName) {
+      welcomeEl.textContent = `Welcome back, ${savedName}!`;
+    } else {
+      welcomeEl.textContent = "Welcome to FlowBalance!";
+    }
+
+    document.getElementById("startBtn").addEventListener("click", () => {
+      window.location.href = "dashboard.html";
+    });
+  </script>
+
+  <!-- ✔ PRACTICAL: EXTERNAL JAVASCRIPT -->
+  <script src="js/app.js"></script>
+  <!-- TOP NAVBAR (GLOBAL) -->
+
+</body>
+</html>

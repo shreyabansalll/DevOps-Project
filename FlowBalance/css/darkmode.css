@@ -1,0 +1,72 @@
+/* ========================================
+   FlowBalance Dark Mode Styles
+   Activated when <body> gets class="dark"
+========================================= */
+
+body.dark {
+  --primary: #7aa2ff;
+  --secondary: #b7bcd1;
+  --bg: #0f1117;
+  --card-bg: #1a1c23;
+  --text: #e6e7eb;
+  --shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+/* Background */
+body.dark {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Cards */
+body.dark .card {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+/* Buttons */
+body.dark .primary-btn {
+  background: var(--primary);
+  color: #fff;
+}
+
+body.dark .secondary-btn {
+  background: #2a2d36;
+  color: var(--text);
+}
+
+body.dark .danger-btn {
+  background: #ff4b4b;
+  color: white;
+}
+
+/* Inputs */
+body.dark input,
+body.dark select {
+  background: #22242b;
+  color: var(--text);
+  border: 1px solid #333741;
+}
+
+/* Titles & Text */
+body.dark .title span,
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: var(--primary);
+}
+
+/* Timer Display */
+body.dark .timer-display {
+  color: var(--primary);
+}
+
+/* List Items */
+body.dark .list li {
+  background: var(--card-bg);
+}
+
+/* Footer */
+body.dark footer {
+  color: var(--secondary);
+}

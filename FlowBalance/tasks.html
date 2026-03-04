@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowBalance | Tasks</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- TOP NAVBAR (GLOBAL) -->
+<nav class="top-nav card">
+  <div class="nav-left">
+    <a href="index.html" class="brand">Flow<span>Balance</span></a>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="finance.html">Finance</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <div id="quoteCompact" class="quote-compact"></div>
+    <button id="profileBtn" class="secondary-btn">Hi, <span id="navUser">You</span></button>
+  </div>
+</nav>
+  <!-- HEADER -->
+  <header class="page-header">
+    <h1>Task Manager</h1>
+    <p class="page-subtitle">Organise your tasks and boost your productivity</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="tasks-container">
+
+    <!-- ADD TASK FORM -->
+    <section class="card form-card">
+      <h2>Add New Task</h2>
+      <form id="taskForm">
+        <label>
+          Task Name:
+          <input type="text" id="taskInput" placeholder="Eg. Study JS for 1 hour" required />
+        </label>
+
+        <label>
+          Priority:
+          <select id="taskPriority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </label>
+
+        <button type="submit" class="primary-btn">Add Task</button>
+      </form>
+    </section>
+
+    <!-- TASK LIST -->
+    <section class="card list-card">
+      <h2>Your Tasks</h2>
+      <ul id="taskList" class="list"></ul>
+    </section>
+
+    <!-- TIMER SECTION -->
+    <section class="card timer-card">
+      <h2>Focus Timer</h2>
+
+      <p id="timerDisplay" class="timer-display">25:00</p>
+
+      <div class="btn-group">
+        <button id="startTimer" class="primary-btn small-btn">Start</button>
+        <button id="pauseTimer" class="secondary-btn small-btn">Pause</button>
+        <button id="resetTimer" class="secondary-btn small-btn">Reset</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 FlowBalance • Task Manager Module</p>
+  </footer>
+
+  <!-- EXTERNAL JS -->
+  <script src="js/tasks.js"></script>
+
+</body>
+</html>
