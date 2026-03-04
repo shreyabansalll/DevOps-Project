@@ -1,0 +1,90 @@
+/* ======================================================
+   FlowBalance — Dark Mode (Design Token Overrides)
+   Activated when <body> has class="dark"
+====================================================== */
+
+body.dark {
+  --color-bg: #0a0b0e;
+  --color-bg-elevated: #0f1115;
+  --color-surface: #1a1c23;
+  --color-surface-hover: #22252e;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-text: #e6e7eb;
+  --color-text-muted: #9ca3af;
+  --color-accent: #7aa2ff;
+  --color-accent-alt: #a78bfa;
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --primary: var(--color-accent);
+}
+
+body.dark {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.dark .card {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+body.dark .primary-btn,
+body.dark .btn--primary {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(122, 162, 255, 0.3);
+}
+
+body.dark .secondary-btn,
+body.dark .btn--secondary {
+  background: #2a2d36;
+  border-color: var(--color-border);
+}
+
+body.dark .danger-btn,
+body.dark .btn--danger {
+  background: var(--color-danger);
+  color: #fff;
+  border-color: transparent;
+}
+
+body.dark input,
+body.dark select {
+  background: #22242b;
+  border-color: #333741;
+  color: var(--color-text);
+}
+
+body.dark .list li {
+  background: var(--color-surface);
+  border-color: var(--color-border-subtle);
+}
+
+body.dark .stat-card {
+  background: var(--color-surface);
+  border-color: var(--color-border-subtle);
+}
+
+body.dark .overview-item {
+  background: var(--color-surface);
+  border-color: var(--color-border-subtle);
+}
+
+body.dark .brand span,
+body.dark .hero .title span,
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: var(--color-accent);
+}
+
+body.dark .timer-display {
+  color: var(--color-accent);
+}
+
+body.dark footer,
+body.dark .footer {
+  color: var(--color-text-muted);
+}

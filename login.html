@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowBalance | Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/darkmode.css" />
+</head>
+<body>
+
+  <!-- TOP NAVBAR -->
+  <nav class="top-nav card">
+    <div class="nav-left">
+      <a href="index.html" class="brand">Flow<span>Balance</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="index.html" class="secondary-btn">Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- AUTH SECTION -->
+  <main class="auth-container fade-in">
+    <section class="auth-card card">
+      <div class="auth-header">
+        <h1 class="auth-title">Flow<span>Balance</span></h1>
+        <p class="auth-subtitle muted">Track your tasks • Manage your finances • Stay balanced</p>
+      </div>
+
+      <!-- Login / Register Toggle -->
+      <div class="auth-tabs">
+        <button type="button" id="tabLogin" class="auth-tab active">Login</button>
+        <button type="button" id="tabRegister" class="auth-tab">Register</button>
+      </div>
+
+      <!-- Error Message -->
+      <div id="authError" class="auth-error hidden" role="alert"></div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="auth-form">
+        <label>
+          Email
+          <input type="email" id="loginEmail" placeholder="you@example.com" required autocomplete="email" />
+        </label>
+        <label>
+          Password
+          <input type="password" id="loginPassword" placeholder="••••••••" required autocomplete="current-password" minlength="6" />
+        </label>
+        <button type="submit" class="primary-btn auth-submit" id="loginSubmit">Log in</button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" class="auth-form hidden">
+        <label>
+          Name
+          <input type="text" id="registerName" placeholder="Your name" required autocomplete="name" maxlength="100" />
+        </label>
+        <label>
+          Email
+          <input type="email" id="registerEmail" placeholder="you@example.com" required autocomplete="email" />
+        </label>
+        <label>
+          Password
+          <input type="password" id="registerPassword" placeholder="At least 6 characters" required autocomplete="new-password" minlength="6" />
+        </label>
+        <label>
+          Confirm Password
+          <input type="password" id="registerPasswordConfirm" placeholder="••••••••" required autocomplete="new-password" minlength="6" />
+        </label>
+        <button type="submit" class="primary-btn auth-submit" id="registerSubmit">Create account</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="card footer">
+    <p>© 2025 FlowBalance • Designed for Productivity & Finance</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
